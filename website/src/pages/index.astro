@@ -62,7 +62,9 @@ import "../styles/global.css";
       </p>
     </footer>
 
-    <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
+    <script
+      src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"
+    ></script>
   </body>
 </html>
 
@@ -71,6 +73,12 @@ import "../styles/global.css";
     margin: 0 auto;
     width: 75ch;
     max-width: 100%;
+  }
+
+  @media screen and (max-width: 600px) {
+    html {
+      font-size: 12px;
+    }
   }
 
   header {
@@ -131,6 +139,10 @@ import "../styles/global.css";
     text-transform: uppercase;
 
     margin-bottom: 2rem;
+  }
+
+  section p {
+    font-size: 1.25rem;
   }
 
   #typefaces {
