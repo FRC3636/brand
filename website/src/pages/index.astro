@@ -57,12 +57,22 @@ import "../styles/global.css";
     </main>
 
     <footer>
-      <p>Copyright 2023, <a href="https://frcteam3636.com">Generals Robotics</a></p>
+      <p>
+        Copyright 2023, <a href="https://frcteam3636.com">Generals Robotics</a>
+      </p>
     </footer>
+
+    <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
   </body>
 </html>
 
 <style>
+  body {
+    margin: 0 auto;
+    width: 75ch;
+    max-width: 100%;
+  }
+
   header {
     display: grid;
     place-content: center;
@@ -86,7 +96,7 @@ import "../styles/global.css";
 
     animation: background-star linear both;
     animation-timeline: scroll(block root);
-    animation-range: exit;
+    animation-duration: 1ms;
   }
 
   header h1 {
@@ -111,11 +121,6 @@ import "../styles/global.css";
     text-decoration: var(--col-blue) underline;
   }
 
-  main {
-    margin: 0 auto;
-    max-width: 75ch;
-  }
-
   section {
     padding: 4rem;
   }
@@ -131,9 +136,8 @@ import "../styles/global.css";
   #typefaces {
     display: grid;
     padding: 2rem 0;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-auto-flow: column;
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 3rem;
   }
 
   #typefaces h2 {
@@ -152,14 +156,17 @@ import "../styles/global.css";
   }
 
   #colors {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   #colors > div {
-    flex: 1;
     padding: 2rem;
-    margin: 0 1rem;
+
     text-align: center;
+
+    border: 4px solid currentColor;
     border-radius: 1rem;
   }
 
