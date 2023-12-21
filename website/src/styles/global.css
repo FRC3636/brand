@@ -4,7 +4,7 @@
   --col-dgray: #2d2a2b;
   --col-blue: #1d48a3;
 
-  --font-heading: "Loos Variable", sans-serif;
+  --font-heading: "Loos", sans-serif;
   --font-subheading: "Montserrat", sans-serif;
   --font-body: "Montserrat", sans-serif;
 
@@ -47,7 +47,7 @@ a:hover {
 }
 
 @font-face {
-  font-family: "Loos Variable";
+  font-family: "Loos";
   src: url(fonts/LoosLCGeo-Variable-Web.woff2);
 }
 
