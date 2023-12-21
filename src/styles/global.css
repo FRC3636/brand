@@ -1,0 +1,64 @@
+:root {
+  --col-white: #ffffff;
+  --col-black: #0a0a0a;
+  --col-dgray: #2d2a2b;
+  --col-blue: #1d48a3;
+
+  --font-heading: "Loos Variable", sans-serif;
+  --font-subheading: "Montserrat", sans-serif;
+  --font-body: "Montserrat", sans-serif;
+
+  color-scheme: dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+
+  background: var(--col-black);
+  color: var(--col-white);
+  font-family: var(--font-body);
+
+  line-height: 1.15;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  margin: 0;
+}
+
+a {
+  color: currentColor;
+  transition: text-decoration 0.2s ease-in-out;
+}
+
+a:hover {
+  text-decoration: var(--col-blue) underline;
+}
+
+@font-face {
+  font-family: "Loos Variable";
+  src: url(fonts/LoosLCGeo-Variable-Web.woff2);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  src: url(fonts/Montserrat-VF.woff2);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: italic;
+  src: url(fonts/Montserrat-Italic-VF.woff2);
+}
